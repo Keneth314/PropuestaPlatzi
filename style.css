@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.studentsHome-MaxSize {
+    max-width: 425px;
+    margin: 0 auto;
+}
+
+.NewSearch-Size {
+    display: inherit;
+}
+
+.MenuDisplay {
+    display: inherit;
+}
+
+/* ---------------------------------- */
+
+.StudentsHome{
+    max-width: 425px;
+    margin: 0 auto;
+}
+.Nav{
+    max-width: 425px;
+    height: calc(52px + 40px);
+    background: #121f3d;
+    display: grid;
+    grid-template-columns: 90px 50px auto 50px 50px 50px;
+}
+
+/* ------   Logo  ------- */
+.Logo{
+    grid-column: 1/2;
+    grid-row: 1;
+    order: -1;
+}
+
+
+/* ------   LiveMainHeader  ------- */
+.LiveMainHeader-logo{
+    color: white;
+}
+
+/* ------   Search  ------- */
+.NewSearch{
+    grid-column: 4/5;
+    grid-row: 1;
+    align-self: center;
+    
+}
+.NewSearch-margin{
+    margin: 0;
+}
+.NewSearch-margin button{
+    margin: 0 auto; 
+}
+
+.NewSearch svg{
+    font-size: 17px;
+}
+
+/* ------   Tinkerbell  ------- */
+.Tinkerbell-new{
+    grid-column: 5/6;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+}
+.Tinkerbell-icon{
+    margin: 0 auto;
+}
+
+/* ------   Menu  ------- */
+.Menu-new{
+    grid-column: 6/7;
+    grid-row: 1;
+    align-self: center;
+}
+.Menu-new svg{
+    margin: 0 auto;
+    color: white;
+    font-size: 10px;
+}
+
+/* ------   LOGO  ------- */
+.Actionsv2-new{
+    grid-column: 1/7;
+    grid-row: 2;
+}
+.ActionDetail{
+    display: flex;
+    justify-content: center;
+}
+.ActionDetail span{
+    color: white;
+    margin-right: 7px;
+}
+.ActionDetail svg{
+    color: white;
+}
+.LiveMainHeaderTitle{
+    display: none;
+}
+
+/* ------   StudentsHome  ------- */
+.StudentsHome-Content{
+    max-width: 425px;
+    background-color: #121f3d;
+    padding-bottom: 10px;
+    box-shadow: 0 -2px 4px 0 rgba(0,0,0,.25);
+}
+
+
+/* ----------------- MEDIA QUERYS ------------------------- */
+
+@media (min-width: 375px){
+    .Nav{
+        grid-template-columns: 90px 130px auto 50px 50px 50px;
+    }
+    .LiveMainHeaderTitle{
+        color: white;
+        font-size: 13px;
+        display: inline-block;
+        background: hsla(0,0%,100%,.15);
+        border-radius: 0 0.25rem 0.25rem 0;
+        font-size: 12px;
+        max-width: 97px;
+        overflow: hidden;
+        padding: 0.25rem 0.5rem;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .LiveMainHeader-logo{
+        border-radius: 0.25rem 0  0 0.25rem;
+    }
+}
+@media (min-width: 1200px){
+    .ExperimentalStats-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .ContinueLearning-classes{
+        grid-template-columns: 1fr;
+
+    }
+}
+
+@media (min-width: 1330px){
+    .Menu-new svg{
+        position: relative;
+        right: 20px;
+    }
+}
+
